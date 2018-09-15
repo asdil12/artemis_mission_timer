@@ -27,9 +27,9 @@ while True:
     b = bytes()
 
     if turn_info['interlude']:
-        b += b'\x89\x82Interlude Time'
+        b += b'\x89\x82Interlude Time  '
     else:
-        b += b'\x89\x80Mission Time'
+        b += b'\x89\x80Mission Time    '
 
     b += b'\x8A\x87'
     t = time.strftime("%M:%S", time.gmtime(int(turn_info['remaining'])))
